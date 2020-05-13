@@ -3,25 +3,15 @@
 
 source ~/.git-prompt.sh
 
-# Temporary functions
-alias tesi="source $HOME/.virtualenvs/tesi/bin/activate && cd ~/Thesis/"
-alias sal='export TERM=xterm-256color && ssh ginkobab@salvatore -t tmux a'
-
 # Unlimited history
 HISTSIZE=-1
 HISTFILESIZE=-1
 
 # Aliases
-
 alias ls='ls --color=always'
-alias dot='git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 alias venv='source $HOME/Documents/scripts/various/venv'
-# alias shut='systemctl poweroff'
-# alias r='lfcd'
-
 
 # Variables
-
 export sal='ginkobab@192.168.178.222'
 export GOPATH="$HOME/golearn"
 export GOBIN="$GOPATH/golearn/bin"
@@ -36,22 +26,6 @@ export PATH=$HOME/golearn/bin:$PATH
 
 
 # Functions
-
-lfcd () {
-    tmp="$(mktemp)"
-    lf -last-dir-path="$tmp" "$@"
-    if [ -f "$tmp" ]; then
-        dir="$(cat "$tmp")"
-        rm -f "$tmp"
-        if [ -d "$dir" ]; then
-            if [ "$dir" != "$(pwd)" ]; then
-                cd "$dir"
-            fi
-        fi
-    fi
-}
-
-
 virtualenv_info(){
     # Get Virtual Env
     if [[ -n "$VIRTUAL_ENV" ]]; then
@@ -74,7 +48,6 @@ colorize() {
 	if [[ $@ == *bold* ]]; then
 		effect=01;
 	fi
-	
 	esc='\[\033'
 	white='[0m\]'
 	color="[$effect;38;5;$1m\]"
@@ -84,6 +57,24 @@ colorize() {
 		space=''
 	fi
 	echo "$esc$color$word$esc$white$space"
+}
+
+formatColor(){ 
+    echo $1 | sed -e 's/\///g' -e 's/^/#/'; 
+}
+
+checkdir(){
+	case $1 in
+		$HOME/livequiz*)
+			source $HOME/.virtualenvs/livequiz/bin/activate
+		;;
+		$HOME/Thesis*)
+			source $HOME/.virtualenvs/tesi/bin/activate
+		;;
+		$HOME/goapp*)
+			export GOBIN="$HOME/goapp/backend/bin"
+			export GOPATH="$HOME/goapp/backend"
+	esac
 }
 
 
@@ -113,15 +104,6 @@ base0D="83/a5/98" # blue
 base0E="d3/86/9b" # purple
 base0F="d6/5d/0e" # brown
 
-
-
-
-formatColor(){ 
-    echo $1 | sed -e 's/\///g' -e 's/^/#/'; 
-}
-
-
-
 # 16 color space
 put_template 0  $base00 # ----
 put_template 1  $base08 # red
@@ -139,21 +121,6 @@ put_template 12 $base0D # blue
 put_template 13 $base04 # +
 put_template 14 $base0C # aqua
 put_template 15 $base07 # ++++
-
-checkdir(){
-	case $1 in
-		$HOME/livequiz*)
-			source $HOME/.virtualenvs/livequiz/bin/activate
-		;;
-		$HOME/Thesis*)
-			source $HOME/.virtualenvs/tesi/bin/activate
-		;;
-		$HOME/goapp*)
-			export GOBIN="$HOME/goapp/backend/bin"
-			export GOPATH="$HOME/goapp/backend"
-
-	esac
-}
 
 set_ps1(){
 	checkdir $(pwd)
