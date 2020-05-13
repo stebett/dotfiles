@@ -1,0 +1,95 @@
+global !p
+from snippet_helpers import *
+endglobal
+
+snippet -> "arrow" A
+$\rightarrow$ 
+endsnippet 
+
+snippet * "emphatize" 
+\emph{$1} $0
+endsnippet
+
+snippet ** "bold" 
+\textbf{$1} $0
+endsnippet
+
+
+snippet skip "medskip" bA
+\medskip\\\ $0
+endsnippet
+
+snippet cit "citation" b
+\begin{quote}
+	\emph{$1}
+	\begin{flushright}
+		$2
+	\end{flushright}
+\end{quote}
+endsnippet
+
+snippet sbp "subparagraph" bA
+\subparagraph{$1} $0
+endsnippet
+
+snippet sbs "subsection" bA
+\subsection{$1} 
+
+$0
+endsnippet
+
+snippet myp "myparagraph" bA
+\myparagraph{$1} 
+
+$0
+endsnippet
+
+snippet enum "enumerate" b
+\begin{enumerate}
+	\item
+\end{enumerate}
+endsnippet
+
+snippet par "paragraph" b
+\paragraph{$1}  $0
+endsnippet
+		
+snippet sec "section" b
+\section{$1}
+
+$0
+endsnippet
+
+snippet item "itemize" b
+\begin{itemize}
+	\item $0
+\end{itemize}
+endsnippet
+
+snippet beg "beign" b
+\begin{$1}
+	$0
+\end{$1}
+endsnippet
+
+snippet mini "minipage" b
+\begin{minipage}{.45\textwidth}
+	$1
+\end{minipage}
+\begin{minipage}{.45\textwidth}
+	$2
+\end{minipage}
+endsnippet
+
+snippet dsm "dsm format" b
+\begin{itemize}
+	\item \textbf{A.} $1
+	\begin{enumerate}
+		\item
+	\end{enumerate}
+
+	\item \textbf{B.} $2
+	\item \textbf{C.} $3
+\end{itemize}
+endsnippet
+
