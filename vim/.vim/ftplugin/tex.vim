@@ -7,6 +7,7 @@ nnoremap == o\item
 nnoremap <leader>vv :VimtexView<CR>
 nnoremap <leader>vc :VimtexClean<CR>
 nnoremap <leader>vs :VimtexCompile<CR>
+nnoremap <leader>vi :VimtexTocOpen<CR>
 
 nnoremap <F10> :call screenshot#TakeScreenshot()<cr><cr>
 

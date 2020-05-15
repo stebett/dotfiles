@@ -13,16 +13,16 @@ alias venv='source $HOME/Documents/scripts/various/venv'
 
 # Variables
 export sal='ginkobab@192.168.178.222'
-export GOPATH="$HOME/golearn"
-export GOBIN="$GOPATH/golearn/bin"
+export GOPATH="$HOME/.go"
+export GOBIN="$GOPATH/bin"
 export EDITOR='vim' 
-export VISUAL='less'
+export VISUAL='vim'
 export OPENER='xdg-open'
 export BROWSER='firefox'
 export TERMINAL='xterm-kitty'
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export TESSDATA_PREFIX=/usr/local/share/tessdata/
-export PATH=$HOME/golearn/bin:$PATH
+export PATH=$GOBIN:$PATH
 
 
 # Functions

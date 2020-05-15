@@ -123,13 +123,5 @@ super + {Left,Down,Up,Right}
 
 # 
 super + e
-    brave
+    firefox
 
-super + m
-	/home/ginko/.config/rofi/uni_scripts/./notes rofi-lectures.py
-
-super + n
-	/home/ginko/.config/rofi/uni_scripts/./notes rofi-courses.py
-
-super + z
-	/home/ginko/.config/rofi/uni_scripts/./notes rofi-lectures-view.py
