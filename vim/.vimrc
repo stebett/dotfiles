@@ -18,14 +18,6 @@ let g:tex_flavor = "latex"
 
 let mapleader=' '
 
-" let g:netrw_list_hide= '^\.'
-" let g:netrw_banner=0
-" let g:netrw_fastbrowse = 1
-" let g:netrw_winsize = 40
-" nnoremap Q :Lexplore<cr>
-
-
-" set splitright
 set hidden
 set number
 set noswapfile 
@@ -36,18 +28,14 @@ set linebreak
 set smartindent
 set showmatch
 set noshowmode
-set mat=2
-set t_vb=
 set clipboard+=unnamedplus
 set mouse=a
-set wildignore=*.o,*~,*pyc,*/.git/*,*/.hg/*,*/.svn/*
 set whichwrap+=<,>,h,l
 set shiftwidth=4
 set tabstop=4
 set tags+=./.tags
 set completeopt=longest,menuone,noinsert
 set completeopt-=preview
-set path=.,**
 " set grepprg=rg\ --vimgrep
 
 
