@@ -11,6 +11,7 @@ Plug 'fatih/vim-go', {'for': ['go']}
 Plug 'lervag/vimtex', {'for': ['tex']}
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-commentary'
 call plug#end()
 
 let g:python3_host_prog="/home/ginko/.virtualenvs/nvim/bin/python3"

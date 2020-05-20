@@ -10,6 +10,7 @@ HISTFILESIZE=-1
 # Aliases
 alias ls='ls --color=always'
 alias venv='source $HOME/Documents/scripts/various/venv'
+alias vim='vim -c "let g:tty='\''$(tty)'\''"'
 
 # Variables
 export sal='ginkobab@192.168.178.222'
@@ -19,7 +20,6 @@ export EDITOR='vim'
 export VISUAL='vim'
 export OPENER='xdg-open'
 export BROWSER='firefox'
-export TERMINAL='xterm-kitty'
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export TESSDATA_PREFIX=/usr/local/share/tessdata/
 export PATH=$GOBIN:$PATH
