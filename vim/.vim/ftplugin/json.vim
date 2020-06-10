@@ -1,0 +1,1 @@
+inoremap == yyp -A,+wwwci"

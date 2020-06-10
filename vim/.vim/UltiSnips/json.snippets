@@ -1,0 +1,56 @@
+snippet diagnosi "Aggiungi diagnosi in fretta" b
+
+{ 
+	"Nome": "$1",
+	"Criteri": {
+		"A": "$2",
+		"B": "$3",
+		"C": "$4",
+		"D": "$5",
+		"E": "$6",
+		"F": "$7",
+		"G": "$8",
+		"Tempo": "$9",
+		"Compromissione": "${10:I sintomi causano disagio clinicamente significativo o compromissione del funzionamento in ambito sociale, lavorativo o in altre aree importanti."},
+		"CondizioneMedica": "${11:L'episodio non e' attribuibile agli effetti fisiologici di una sostanza o un'altra condizione medica generale"}
+	},
+	"Sintomi": {
+		"Emotivi": {
+			"1": "$12"
+		},
+		"Cognitivi": {
+			"1": "$13"
+		},
+		"Neurovegetativi": {
+			"1": "$14"
+		},
+		"Comportamentali": {
+			"1": "$15"
+		}
+	},
+	"Specificatori": {
+			"1": "$16"
+
+	},
+	"DiagnosiDifferenziale":{
+		"1": "$17"
+	},
+	"Prevalenza": "$18",
+	"Incidenza": "$19",
+	"DifferenzaGenere": "$20",
+	"DifferenzaEta": "$21",
+	"Decorso": {
+		"Esordio": "$22",
+		"PeriodoDiStato": "$23",
+		"SintomiResidui": "$24"
+	  },
+      "Prognosi":"$25"
+    },
+
+endsnippet
+
+snippet tgg "Quasi tutti i giorni" bA
+Tutti i giorni o quasi tutti i giorni
+endsnippet
+
+

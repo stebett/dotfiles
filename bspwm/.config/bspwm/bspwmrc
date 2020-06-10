@@ -19,10 +19,13 @@ bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a Gimp        	desktop='^8' state=floating follow=on
-bspc rule -a Zathura     	state=tiled
-bspc rule -a Matplotlib  	state=floating
-bspc rule -a "GNU Octave"    state=floating
-bspc rule -a processing-app-Base    state=floating
+bspc rule -a code-oss    				  desktop='^2'
+bspc rule -a firefox    				  desktop='^3'
+bspc rule -a Zathura     		    	  desktop='^4' state=tiled
+bspc rule -a Gimp        	        	  desktop='^8' state=floating follow=on
+
+bspc rule -a Matplotlib  		   					   state=floating
+bspc rule -a "GNU Octave"    			 			   state=floating
+bspc rule -a processing-app-Base    	 			   state=floating
 
 $HOME/.config/polybar/launch.sh

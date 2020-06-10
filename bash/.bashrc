@@ -10,11 +10,10 @@ HISTFILESIZE=-1
 # Aliases
 alias ls='ls --color=always'
 alias venv='source $HOME/Documents/scripts/various/venv'
-alias vim='vim -c "let g:tty='\''$(tty)'\''"'
 
 # Variables
 export sal='ginkobab@192.168.178.222'
-export GOPATH="$HOME/.go"
+export GOPATH="$HOME/dev/go"
 export GOBIN="$GOPATH/bin"
 export EDITOR='vim' 
 export VISUAL='vim'
