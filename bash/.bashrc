@@ -4,8 +4,8 @@
 source ~/.git-prompt.sh
 
 # Unlimited history
-HISTSIZE=-1
-HISTFILESIZE=-1
+export HISTSIZE=-1
+export HISTFILESIZE=-1
 
 # Aliases
 alias ls='ls --color=always'
@@ -66,6 +66,9 @@ checkdir(){
 	case $1 in
 		$HOME/livequiz*)
 			source $HOME/.virtualenvs/livequiz/bin/activate
+		;;
+		/home/ginko/neuronmodelling)
+			source $HOME/.virtualenvs/neuromatch/bin/activate
 		;;
 		$HOME/Thesis*)
 			source $HOME/.virtualenvs/tesi/bin/activate

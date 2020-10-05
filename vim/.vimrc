@@ -12,6 +12,8 @@ Plug 'lervag/vimtex', {'for': ['tex']}
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-commentary'
+Plug 'junegunn/vim-easy-align'
+Plug 'julialang/julia-vim'
 call plug#end()
 
 let g:python3_host_prog="/home/ginko/.virtualenvs/nvim/bin/python3"
@@ -35,10 +37,10 @@ set whichwrap+=<,>,h,l
 set shiftwidth=4
 set tabstop=4
 set tags+=./.tags
-set completeopt=longest,menuone,noinsert
-set completeopt-=preview
+set completeopt=longest,menuone
 " set grepprg=rg\ --vimgrep
-
+"
+xmap ga <Plug>(EasyAlign)
 
 " Intelligently navigate tmux panes and Vim splits using the same keys.
 " See https://sunaku.github.io/tmux-select-pane.html for documentation.
