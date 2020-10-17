@@ -39,7 +39,7 @@ case $chosen in
 		fi 
 		;;
     $launch_cli)
-        kitty -e nvim ~/Documents/scripts/wifi/scan_bash
+			float kitty -e sudo ~/Documents/scripts/wifi/./addwifi
         ;;
 esac
 

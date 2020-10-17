@@ -67,7 +67,10 @@ checkdir(){
 		$HOME/livequiz*)
 			source $HOME/.virtualenvs/livequiz/bin/activate
 		;;
-		/home/ginko/neuronmodelling)
+		/home/ginko/ens)
+			source $HOME/.virtualenvs/ens/bin/activate
+		;;
+		/home/ginko/ra)
 			source $HOME/.virtualenvs/neuromatch/bin/activate
 		;;
 		$HOME/Thesis*)

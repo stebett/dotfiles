@@ -23,7 +23,7 @@ else
 fi
 
 terminal=""
-files="ﱮ"
+files=""
 keyboard=""
 browser=""
 # music=""
@@ -38,7 +38,7 @@ case $chosen in
         kitty &
         ;;
     $files)
-        nautilus &
+		float kitty -e tmux new-session -A -s alarm \; new-window /home/ginko/Documents/scripts/various/./timer
         ;;
     $keyboard)
         setxkbmap $kb_new; setxkbmap -option ctrl:swapcaps

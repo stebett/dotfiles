@@ -53,4 +53,11 @@
 "/home/ginko/Documents/scripts/various/./shot"
 	XF86Tools
 
+
+"/home/ginko/Documents/scripts/various/./edittodo"
+	XF86LaunchA
+
+"/home/ginko/Documents/scripts/various/./opentodo"
+	XF86Explorer
+
 # remember xbindkeys --poll-rc
