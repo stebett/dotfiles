@@ -26,6 +26,7 @@ bspc rule -a Gimp        	        	  desktop='^8' state=floating follow=on
 bspc rule -a TelegramDesktop			  desktop='^10'
 
 bspc rule -a Matplotlib  		   					   state=floating
+bspc rule -a gksqt       		   					   state=floating
 bspc rule -a "GNU Octave"    			 			   state=floating
 bspc rule -a processing-app-Base    	 			   state=floating
 
