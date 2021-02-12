@@ -11,7 +11,13 @@ export HISTFILESIZE=-1
 alias ls='ls --color=always'
 alias venv='source $HOME/Documents/scripts/various/venv'
 
+# PhD
+alias deadlines='python /home/ginko/phd/scripts/deadlines.py'
+alias info='/home/ginko/phd/scripts/./info'
+alias sent='/home/ginko/phd/scripts/./done'
+
 # Variables
+export TERM=xterm-256color
 export sal='ginkobab@192.168.178.222'
 export GOPATH="$HOME/dev/go"
 export GOBIN="$GOPATH/bin"
@@ -21,7 +27,10 @@ export OPENER='xdg-open'
 export BROWSER='firefox'
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export TESSDATA_PREFIX=/usr/local/share/tessdata/
-export PATH=$GOBIN:$PATH
+export PATH="$HOME/.local/bin/":$GOBIN:$PATH
+export JULIA_NUM_THREADS=4
+export PYTHONPATH=$PYTHONPATH:/home/ginko/ens/src/lfads/
+
 
 
 # Functions
@@ -62,25 +71,13 @@ formatColor(){
     echo $1 | sed -e 's/\///g' -e 's/^/#/'; 
 }
 
-checkdir(){
-	case $1 in
-		$HOME/livequiz*)
-			source $HOME/.virtualenvs/livequiz/bin/activate
-		;;
-		/home/ginko/ens)
-			source $HOME/.virtualenvs/ens/bin/activate
-		;;
-		/home/ginko/ra)
-			source $HOME/.virtualenvs/neuromatch/bin/activate
-		;;
-		$HOME/Thesis*)
-			source $HOME/.virtualenvs/tesi/bin/activate
-		;;
-		$HOME/goapp*)
-			export GOBIN="$HOME/goapp/backend/bin"
-			export GOPATH="$HOME/goapp/backend"
-	esac
-}
+# checkdir(){
+# 	case $1 in
+# 		/home/ginko/ens)
+# 			source $HOME/.virtualenvs/ens/bin/activate
+# 		;;
+# 	esac
+# }
 
 
 # Colors
@@ -128,7 +125,7 @@ put_template 14 $base0C # aqua
 put_template 15 $base07 # ++++
 
 set_ps1(){
-	checkdir $(pwd)
+	# checkdir $(pwd)
 	venv="$(virtualenv_info)" 
 	host="$(hostname)"
 	branch="$(__git_ps1)"
