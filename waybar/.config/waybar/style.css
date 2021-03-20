@@ -1,81 +1,45 @@
 * {
-    border: none;
+    border: 0;
+	margin-right: 2px;
+	margin-left: 0px;
     border-radius: 0;
-    /* `otf-font-awesome` is required to be installed for icons */
     font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 40px;
     min-height: 0;
 }
 
-
-
 #waybar {
     background: transparent;
-    color: white;
 }
 
-/* /1* name of program selected *1/ */
-/* window#waybar { */
-/*     background-color: rgba(43, 48, 59, 0.0); */
-/*     border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
-/*     color: #ffffff; */
-/*     transition-property: background-color; */
-/*     transition-duration: .5s; */
-/* } */
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
 
 #window {
     font-weight: bold;
-    font-family: "OverpassMono";
+    font-family: "Anonymous Pro";
+	color: black;
+	background-color: black
 }
+
 
 #workspaces button {
-    padding: 5 6px;
-
+	color: #000000;
+	opacity: 0.3;
+	padding: 2 0px;
 }
 
-#workspaces button:nth-child(1) {
-    color: rgb(0, 102, 255);
+#workspaces button.current_output {
+	opacity: 1;
 }
 
-#workspaces button:nth-child(2) {
-    color: magenta;
-}
-#workspaces button:nth-child(3) {
-    color: rgb(8, 252, 0);
+
+#workspaces button.visible {
 }
 
-#workspaces button:nth-child(4) {
-    color: brown;
+#workspaces button:hover{
+	color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.0)
 }
 
-#workspaces button:nth-child(5) {
-    color: white;
-}
-
-#workspaces button:nth-child(6) {
-    color: gold;
-
-}
-
-#custom-p1,
-#custom-p2,
-#custom-p3,
-#custom-p4,
-#custom-p5{
-	background-color: #282828;
-	color: #ffffff;
-    padding: 0 10px;
-    margin: 0 4px;
-}
 
 #custom-p1{
     border-radius: 25px 25px 0px 0px;
@@ -85,29 +49,31 @@ window#waybar.solo {
     border-radius: 0px 0px 25px 25px;
 }
 
-
-
+#custom-p1,
+#custom-p2,
+#custom-p3,
+#custom-p4,
+#custom-p5,
 #clock,
 #battery,
 #network,
 #pulseaudio,
-#tray{
-	background-color: #282828;
-    padding: 0 10px;
-    margin: 0 4px;
-    color: #ffffff;
+#custom-power{
+	background-color: rgba(0, 0, 0, 0.5);
+    color: #000000;
+	opacity: 0.8;
+    padding: 3 0px;
 }
-
-#window,
-#workspaces {
-    margin: 0 2px;
-}
-
 
 #pulseaudio{
     border-radius: 25px 25px 0px 0px;
 }
 
-#clock{
+#custom-power{
     border-radius: 0px 0px 25px 25px;
+	margin-bottom: 2px;
+}
+
+#custom-p1{
+	margin-top: 2px;
 }

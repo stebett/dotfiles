@@ -2,40 +2,35 @@ set $mod Mod4
 
 # Gaps
 for_window [class=".*"] border pixel 0
+assign [app_id=".*firefox.*"] workspace 3
+assign [app_id=".*Inkscape"] workspace 4
+assign [app_id=".*zathura"] workspace 4
+assign [app_id="calibre-gui"] workspace 5
+assign [class="Thunderbird"] workspace 5
 gaps inner 8
 gaps outer 0
 
 
 default_border none
+# client.focused "#282828" "#282828" "#282828"
 default_floating_border none
 
 
 # Wallpaper
-output "*" bg $HOME/Pictures/wallpaper2.jpg fill
+output "*" bg $HOME/Pictures/wallpaper1.png fill
 # autostart
 input * {
-    xkb_layout "us,it,fr"
+    xkb_layout "us,it"
     xkb_options "ctrl:swapcaps"
 }
-# Menu
-# bindsym $mod+d exec rofi -lines 12 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns
-set $menu wofi --show=drun --lines=5 --prompt=""
 
+# Menu
+bindsym $mod+p exec wofi
+exec mako &
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:monospace 8
-
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
-
-# Before i3 v4.8, we used to recommend this one as the default:
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# The font above is very space-efficient, that is, it looks good, sharp and
-# clear in small sizes. However, its unicode glyph coverage is limited, the old
-# X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn’t scale on retina/hidpi displays.
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -43,16 +38,17 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+w exec alacritty
 # start the browser
-bindsym $mod+e exec firefox
+bindsym $mod+e exec "export MOZ_ENABLE_WAYLAND=1; exec firefox"
+
 
 # kill focused window
 bindsym $mod+x kill
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 
 # move focused window
@@ -62,7 +58,7 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+# bindsym $mod+KEY_MINUS split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -146,6 +142,6 @@ bindsym XF86MonBrightnessUp exec "/home/ginko/Documents/scripts/brightness/./bri
 bindsym XF86AudioMute exec "pamixer -t"
 bindsym XF86AudioLowerVolume exec "pamixer -d 10"
 bindsym XF86AudioRaiseVolume exec "pamixer -i 10 --allow-boost"
-bindsym XF86Tools exec "/home/ginko/Documents/scripts/various/./shot"
+bindsym XF86Tools exec "/home/ginko/Documents/scripts/various/./shot-grim"
 # bindsym XF86LaunchA exec "/home/ginko/Documents/scripts/various/./edittodo"
 # bindsym XF86Explorer exec "/home/ginko/Documents/scripts/various/./opentodo"

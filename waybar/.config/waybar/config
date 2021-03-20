@@ -1,6 +1,6 @@
 {
-    "layer": "top", // Waybar at top layer
-    "position": "left",
+    "layer": "top",
+    "position": "right",
 
     "modules-left": ["custom/p1",
 					 "custom/p2",
@@ -8,33 +8,34 @@
 					 "custom/p4",
 					 "custom/p5" ],
 
+	"modules-center": ["sway/workspaces"],
 
     "modules-right": ["pulseaudio", 
 					  "network",
-					  /* "cpu", */
-					  /* "memory", */
-					  /* "temperature", */
-					  /* "backlight", */
-					  /* "sway/language", */
 					  "battery",
 					  "battery#bat2",
-					  "clock" ],
+					  "clock",
+					  "custom/power"],
 
-    /* "sway/workspaces": { */
-    /*     "disable-scroll": true, */
-    /*     "all-outputs": false, */
-    /*     "format": "{icon}", */
-    /*     "format-icons": { */
-    /*         "1": "", */
-    /*         "2": "", */
-    /*         "3": "", */
-    /*         "4": "", */
-    /*         "5": "", */
-    /*         "urgent": "", */
-    /*         /1* "focused": "", *1/ */
-    /*         "default": "" */
-    /*     } */
-    /* }, */
+
+	  "sway/workspaces": {
+		  "tooltip": false,
+		  "disable-scroll": true,
+		  "all-outputs": true,
+		  "format": "{icon}",
+		  "format-icons": {
+			  "urgent": "",
+			  "focused": "",
+			  "default": "⭘"
+		  },
+		  "persistent_workspaces": {
+			  "1": [],
+			  "2": [],
+			  "3": [],
+			  "4": [],
+			  "5": [],
+			  },
+	  },
 
 	"custom/p1": {
 		"tooltip": false,
@@ -45,7 +46,7 @@
 	"custom/p2": {
 		"tooltip": false,
 		"format": "",
-		"on-click": "dolphin"
+		"on-click": "thunar"
 	},
 
 	"custom/p3": {
