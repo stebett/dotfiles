@@ -25,6 +25,7 @@ export EDITOR='vim'
 export VISUAL='vim'
 export OPENER='xdg-open'
 export BROWSER='firefox'
+export TERMINAL='alacritty'
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export TESSDATA_PREFIX=/usr/local/share/tessdata/
 export PATH="$HOME/.local/bin/":$GOBIN:$PATH

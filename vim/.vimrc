@@ -5,7 +5,8 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 call plug#begin()
-Plug 'urbainvaes/vim-ripple', {'for': ['python', 'julia']}
+Plug 'tpope/vim-fugitive'
+Plug 'jpalardy/vim-slime'
 Plug 'davidhalter/jedi-vim', {'for': ['python']}
 Plug 'fatih/vim-go', {'for': ['go']}
 Plug 'lervag/vimtex', {'for': ['tex']}
@@ -52,6 +53,14 @@ map <ScrollWheelDown> <C-E>
 
 
 xmap ga <Plug>(EasyAlign)
+
+let g:slime_target = "tmux"
+let g:slime_cell_delimiter = "#%"
+let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
+
+" nmap <S-CR> <Plug>SlimeSendCell
+" nmap <S-CR> <Plug>SlimeSendCell :set nohlsearch<CR> /#%<CR>:let @/ = ""<CR>:set hlsearch<CR>+
+
 
 " Intelligently navigate tmux panes and Vim splits using the same keys.
 " See https://sunaku.github.io/tmux-select-pane.html for documentation.
