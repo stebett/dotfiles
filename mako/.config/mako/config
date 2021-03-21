@@ -3,10 +3,10 @@ max-visible=1
 anchor=top-left
 layer=overlay
 background-color=#50494590
-text-color=#fe8019f0
+text-color=#fabd2ff0
 font=Sauce Code Pro 45
 
-width=500
+width=400
 border-size=0
 border-color=#88c0d0
 border-radius=20
