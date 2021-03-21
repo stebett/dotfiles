@@ -17,27 +17,30 @@
     font-weight: bold;
     font-family: "Anonymous Pro";
 	color: black;
-	background-color: black
+	background-color: black;
+	background: red;
 }
 
 
 #workspaces button {
-	color: #000000;
-	opacity: 0.3;
+	color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.0);
 	padding: 2 0px;
+    border-radius: 25px 25px 25px 25px;
 }
 
 #workspaces button.current_output {
-	opacity: 1;
+	color: rgba(0, 0, 0, 1);
 }
 
 
 #workspaces button.visible {
+	color: rgba(0, 0, 0, 1);
 }
 
 #workspaces button:hover{
-	color: rgba(0, 0, 0, 0.2);
-	background-color: rgba(0, 0, 0, 0.0)
+	color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0)
 }
 
 
@@ -62,7 +65,7 @@
 	background-color: rgba(0, 0, 0, 0.5);
     color: #000000;
 	opacity: 0.8;
-    padding: 3 0px;
+    padding: 3 5px;
 }
 
 #pulseaudio{

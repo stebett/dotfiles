@@ -52,8 +52,8 @@
 	"custom/p3": {
 		"tooltip": false,
 		"format": "",
-		"on-click": "firefox"
-	},
+		"on-click": "export MOZ_ENABLE_WAYLAND=1; exec firefox"
+		},
 
 	"custom/p4": {
 		"tooltip": false,
@@ -70,10 +70,9 @@
 
     "clock": {
 		"tooltip": false,
-        // "timezone": "Europe/Rome",
-        /* "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>", */
 		"format": "",
-        "format-alt": "{:%H:%M}"
+        "on-click": "/home/ginko/Documents/scripts/various/show-time",
+        "on-click-right": "/home/ginko/Documents/scripts/various/show-date"
     },
 
     "battery": {
@@ -86,7 +85,7 @@
         "format": "{icon}",
         "format-charging": "",
         "format-plugged": "",
-        "format-alt": "{capacity}% {time}",
+		"on-click": "/home/ginko/Documents/scripts/various/show-charge",
         "format-icons": ["", "", "", "", ""]
     },
     "battery#bat2": {
@@ -99,6 +98,7 @@
         "format-wifi": "",
         "format-ethernet": "",
         "format-disconnected": "睊",
+		"on-click": "notify-send $(iw wlp3s0 info | grep -Po '(?<=ssid ).*')"
     },
 
 
@@ -116,8 +116,8 @@
     },
 
     "custom/power": {
-    "format": "  ",
-    "on-click": "wlogout",
+    "format": "",
+    "on-click-right": "wlogout -p layer-shell",
     "tooltip": false
 	}
 }

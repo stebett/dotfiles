@@ -23,6 +23,9 @@
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
 
+
+
+
 window:
   # Window dimensions (changes require restart)
   #
@@ -479,7 +482,9 @@ background_opacity: 0.8
 # Key bindings
 #
 # Key bindings are specified as a list of objects. For example, this is the
-# default paste binding:
+default paste binding:
+  - { key: Return,   mods: Shift,   chars: "\x1b[13;2u" }
+  - { key: Return,   mods: Control, chars: "\x1b[13;5u" }
 #
 # `- { key: V, mods: Control|Shift, action: Paste }`
 #

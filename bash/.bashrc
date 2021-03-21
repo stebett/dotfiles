@@ -8,7 +8,9 @@ export HISTSIZE=-1
 export HISTFILESIZE=-1
 
 # Aliases
-alias ls='ls --color=always'
+alias ls="exa --git"
+alias man=batman
+alias cat=bat
 alias venv='source $HOME/Documents/scripts/various/venv'
 
 # PhD
@@ -18,7 +20,6 @@ alias sent='/home/ginko/phd/scripts/./done'
 
 # Variables
 export TERM=xterm-256color
-export sal='ginkobab@192.168.178.222'
 export GOPATH="$HOME/dev/go"
 export GOBIN="$GOPATH/bin"
 export EDITOR='vim' 
