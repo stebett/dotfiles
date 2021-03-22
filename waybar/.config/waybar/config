@@ -77,19 +77,18 @@
 
     "battery": {
 		"tooltip": false,
-        "states": {
-            "good": 70,
-            "warning": 30,
-            "critical": 15
-        },
         "format": "{icon}",
         "format-charging": "",
         "format-plugged": "",
 		"on-click": "/home/ginko/Documents/scripts/various/show-charge",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
     },
     "battery#bat2": {
-		"tooltip": false,
+        "format": "{icon}",
+        "format-charging": "",
+        "format-plugged": "",
+    	"on-click": "/home/ginko/Documents/scripts/various/show-charge",
+        "format-icons": ["", "", "", "", ""],
         "bat": "BAT2"
     },
 	

@@ -19,7 +19,8 @@ alias info='/home/ginko/phd/scripts/./info'
 alias sent='/home/ginko/phd/scripts/./done'
 
 # Variables
-export TERM=xterm-256color
+# export TERM=xterm-256color
+export TERM=screen-256color
 export GOPATH="$HOME/dev/go"
 export GOBIN="$GOPATH/bin"
 export EDITOR='vim' 

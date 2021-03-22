@@ -18,6 +18,7 @@ Plug 'julialang/julia-vim', {'for': ['julia']}
 Plug 'morhetz/gruvbox'
 Plug 'romainl/Apprentice'
 call plug#end()
+runtime! plugin/sensible.vim
 
 let g:python3_host_prog="/home/ginko/.virtualenvs/nvim/bin/python3"
 let g:tex_flavor = "latex"
@@ -43,10 +44,13 @@ set tags+=.tags
 set completeopt=longest,menuone
 set grepprg=rg\ --vimgrep
 
-set t_Co=256
-set termguicolors
 set background=dark
+set t_Co=256
+" set termguicolors
+
 colorscheme gruvbox
+hi Normal ctermbg=NONE guibg=NONE
+set ls=0
 
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>

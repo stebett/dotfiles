@@ -1,6 +1,6 @@
 * {
     border: 0;
-	margin-right: 2px;
+	margin-right: 3px;
 	margin-left: 0px;
     border-radius: 0;
     font-family: Roboto, Helvetica, Arial, sans-serif;
@@ -25,7 +25,7 @@
 #workspaces button {
 	color: rgba(0, 0, 0, 0.3);
 	background-color: rgba(0, 0, 0, 0.0);
-	padding: 2 0px;
+	padding: 2px 0px;
     border-radius: 25px 25px 25px 25px;
 }
 
@@ -62,10 +62,10 @@
 #network,
 #pulseaudio,
 #custom-power{
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
     color: #000000;
 	opacity: 0.8;
-    padding: 3 5px;
+    padding: 3px 7px;
 }
 
 #pulseaudio{
