@@ -1,28 +1,40 @@
 #bar {
-    margin: 30px /* affects top/bottom & left/right alignment */
+    margin: 30px; /* affects top/bottom & left/right alignment */
+    font-size: 16px;
+    font-family: Product Sans;
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 button, image {
     background: none;
     border-style: none;
     box-shadow: none;
-    color: #999
+    color:#ffffff;
 }
 
 button {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     margin: 5px
 }
 
 button:hover {
-    background-color: rgba (255, 255, 255, 0.1)
+    background-color: rgba (255, 255, 255, 0.1);
 }
 
 button:focus {
-    box-shadow: 0 0 2px;
+    background-color: #5e81ac;
 }
 
 grid {
+    background-color: #282828;
+    border-radius: 20px;
+    padding: 5px;
     /* e.g. for common background to all buttons */
 }
+

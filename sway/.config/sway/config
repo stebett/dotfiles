@@ -26,7 +26,7 @@ input * {
 }
 
 # Menu
-bindsym $mod+p exec wofi
+bindsym $mod+p exec "nwggrid -b 282828 -o 0.85"
 exec mako &
 exec dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 

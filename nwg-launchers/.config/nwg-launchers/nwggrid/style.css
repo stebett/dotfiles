@@ -2,7 +2,6 @@ button, label, image {
     background: none;
     border-style: none;
     box-shadow: none;
-    color: #999;
 }
 
 button {
@@ -15,7 +14,7 @@ button:hover {
 }
 
 button:focus {
-    box-shadow: 0 0 2px;
+    box-shadow: 0 0 0px;
 }
 
 #searchbox {
