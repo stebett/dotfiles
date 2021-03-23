@@ -26,7 +26,7 @@
 	color: rgba(0, 0, 0, 0.3);
 	background-color: rgba(0, 0, 0, 0.0);
 	padding: 2px 0px;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 400px 400px 400px 400px;
 }
 
 #workspaces button.current_output {
@@ -39,8 +39,9 @@
 }
 
 #workspaces button:hover{
-	color: rgba(0, 0, 0, 0.3);
-	background-color: rgba(0, 0, 0, 0)
+	color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0);
+	background: transparent;
 }
 
 
@@ -63,7 +64,7 @@
 #pulseaudio,
 #custom-power{
 	background-color: rgba(0, 0, 0, 0.3);
-    color: #000000;
+    color: rgba(0, 0, 0, 1);
 	opacity: 0.8;
     padding: 3px 7px;
 }

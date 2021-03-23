@@ -45,7 +45,8 @@
 
 	"custom/p2": {
 		"tooltip": false,
-		"format": "",
+		"format": "",
+		/* "format": "", */
 		"on-click": "thunar"
 	},
 
@@ -57,14 +58,15 @@
 
 	"custom/p4": {
 		"tooltip": false,
-		"format": "",
-		"on-click": "inkscape"
+		"format": "",
+		"on-click": "calibre"
 	},
 
 	"custom/p5": {
 		"tooltip": false,
-		"format": "",
-		"on-click": "calibre"
+		"format": "",
+		"format": "﩯",
+		"on-click": "nwggrid"
 	},
 
 
@@ -116,7 +118,7 @@
 
     "custom/power": {
     "format": "",
-    "on-click-right": "wlogout -p layer-shell",
+    "on-click": "nwgbar",
     "tooltip": false
 	}
 }
