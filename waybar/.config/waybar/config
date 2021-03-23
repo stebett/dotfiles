@@ -58,7 +58,7 @@
 
 	"custom/p4": {
 		"tooltip": false,
-		"format": "",
+		"format": "",
 		"on-click": "calibre"
 	},
 
@@ -99,7 +99,7 @@
         "format-wifi": "",
         "format-ethernet": "",
         "format-disconnected": "睊",
-		"on-click": "notify-send $(iw wlp3s0 info | grep -Po '(?<=ssid ).*')"
+		"on-click": "notify-send -c network $(iw wlp3s0 info | grep -Po '(?<=ssid ).*')"
     },
 
 

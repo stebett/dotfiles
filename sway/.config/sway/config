@@ -140,8 +140,8 @@ input type:touchpad {
 
 bindsym XF86WLAN exec "sudo /home/ginko/Documents/scripts/wifi/./plane_mode"
 bindsym XF86Search exec "sudo /home/ginko/Documents/scripts/wifi/./scan_bash"
-bindsym XF86MonBrightnessDown exec "/home/ginko/Documents/scripts/brightness/./bright_up down"
-bindsym XF86MonBrightnessUp exec "/home/ginko/Documents/scripts/brightness/./bright_up up"
+bindsym XF86MonBrightnessDown exec "/home/ginko/Documents/scripts/brightness/./bright_down_notify"
+bindsym XF86MonBrightnessUp exec "/home/ginko/Documents/scripts/brightness/./bright_up_notify"
 bindsym XF86AudioMute exec "pamixer -t"
 bindsym XF86AudioLowerVolume exec "pamixer -d 10"
 bindsym XF86AudioRaiseVolume exec "pamixer -i 10 --allow-boost"
