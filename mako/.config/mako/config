@@ -11,7 +11,7 @@ icons=1
 max-icon-size=64
 default-timeout=2000
 ignore-timeout=1
-font=Sauce Code Pro 25
+font=Sauce Code Pro 50
 
 [urgency=low]
 border-color=#cccccc
@@ -26,23 +26,18 @@ default-timeout=0
 
 [category=charge]
 default-timeout=2000
-format=<b><%s</b>
+format=<b>%s</b>
 group-by=category
 
-[category=time]
-default-timeout=2000
-format=<b><i>%s</i></b>
-group-by=category
 
 [category=network]
 default-timeout=2000
-format=<b><i>%s</i></b>
+format=<b>%s</b>
 group-by=category
 
 [category=brightness]
 default-timeout=1000
-width=405
-font=Sauce Code Pro 60
+width=375
 text-color=#fffffff9
 format=<b>%s</b>
 group-by=category
@@ -51,3 +46,18 @@ group-by=category
 background-color=#00000000
 text-color=#00000000
 border-color=#00000000
+
+[category=time]
+default-timeout=1050
+format=<b>%s</b>
+group-by=category
+
+[category=time]
+default-timeout=1050
+format=<b>%s</b>
+group-by=category
+
+[category=timelast]
+default-timeout=1000
+format=<b>%s</b>
+group-by=category
